@@ -2,7 +2,6 @@ const assert = require('assert');
 const findTwo = require('./findTwo');
 const findThree = require('./findThree');
 const fs = require('fs');
-const input =
 
 describe('Find Two numbers that add up to 2020', () => {
     it('should return 514579', () => {
