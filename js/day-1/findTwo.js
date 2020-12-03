@@ -1,14 +1,13 @@
 const findTwo = (input) => {
-    let array = input.toString().split("\n").map(i => parseInt(i));
-    for (i in array) {
+  const array = input.toString().split('\n').map((i) => parseInt(i, 10));
+  for (i in array) {
+    const remainder = 2020 - array[i];
+    const found = array.indexOf(remainder);
 
-        let remainder = 2020 - array[i];
-        let found = array.indexOf(remainder);
-
-        if (found > 0) {
-            return array[i] * array[found];
-        }
+    if (found > 0) {
+      return array[i] * array[found];
     }
-}
+  }
+};
 
 module.exports = findTwo;
