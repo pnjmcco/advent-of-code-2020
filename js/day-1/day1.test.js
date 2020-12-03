@@ -11,7 +11,7 @@ describe('Find Two numbers that add up to 2020', () => {
         299
         675
         1456`
-        assert.strictEqual(findTwo(input), 514579);
+        expect(findTwo(input)).toBe(514579);
     });
 
     it('should return 1018944', () => {
@@ -19,7 +19,7 @@ describe('Find Two numbers that add up to 2020', () => {
             if (err) {
                 return console.log(err);
             }
-            assert.strictEqual(findTwo(data), 1018944)
+            expect(findTwo(data)).toBe(1018944);
         });
     });
 });
@@ -33,7 +33,7 @@ describe('Find Three numbers that add up to 2020', () => {
         299
         675
         1456`
-        assert.strictEqual(findThree(input), 241861950);
+        expect(findThree(input)).toBe(241861950);
     });
 
     it('should return 8446464', () => {
@@ -41,7 +41,7 @@ describe('Find Three numbers that add up to 2020', () => {
             if (err) {
                 return console.log(err);
             }
-            assert.strictEqual(findThree(data), 8446464)
+            expect(findThree(data)).toBe(8446464);
         });
     });
 });
