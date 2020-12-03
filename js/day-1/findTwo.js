@@ -6,7 +6,6 @@ const findTwo = (input) => {
         let found = array.indexOf(remainder);
 
         if (found > 0) {
-            console.log(`Indexs ${i} and ${found} add up to 2020`);
             return array[i] * array[found];
         }
     }

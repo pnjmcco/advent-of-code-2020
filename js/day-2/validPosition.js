@@ -16,7 +16,6 @@ const validPosition = (input) => {
 function isPasswordValid(password) {
     let regex = new RegExp( password.policy.char, 'g' );
     const indices = [...password.password.matchAll(regex)].map(a => a.index);
-    console.log(indices)
     if(!indices.includes(password.policy.min) && !indices.includes(password.policy.max)) {
         return false;
     } else return !(indices.includes(password.policy.min) && indices.includes(password.policy.max));
