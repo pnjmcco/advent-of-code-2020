@@ -26,12 +26,12 @@ iyr:2011 ecl:brn hgt:59in`;
       if (err) {
         return console.log(err);
       }
-      expect(passportValidator(data)).toBe(-1);
+      expect(passportValidator(data)).toBe(219);
     });
   });
 });
 
-describe('extra validation on the passports', () =>{
+describe('extra validation on the passports', () => {
   it('should all be valid', () => {
     const input = `pid:087499704 hgt:74in ecl:grn iyr:2012 eyr:2030 byr:1980
 hcl:#623a2f
@@ -72,7 +72,7 @@ pid:3556412378 byr:2007`;
       if (err) {
         return console.log(err);
       }
-      expect(extraPassportValidator(data)).toBe(-1);
+      expect(extraPassportValidator(data)).toBe(127);
     });
   });
 });
